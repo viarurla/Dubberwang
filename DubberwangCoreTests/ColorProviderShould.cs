@@ -1,7 +1,15 @@
 namespace DubberwangCoreTests;
 
+/// <summary>
+/// Test class to cover testing of the <see cref="ColorProvider"/> class.
+/// </summary>
 public class ColorProviderShould
 {
+    /// <summary>
+    /// Ensure that we get the correct color based on the input value.
+    /// </summary>
+    /// <param name="input"></param>
+    /// <param name="expectedValue"></param>
     [Theory]
     [InlineData(0, "")]
     [InlineData(3, HexColors.Grey)]

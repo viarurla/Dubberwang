@@ -1,5 +1,8 @@
 ﻿namespace DubberwangInterfaces.Constants;
 
+/// <summary>
+/// A static class to act as a psuedo-enum that matches the appropriate hex code to the color.
+/// </summary>
 public static class HexColors
 {
     public const string Grey = "#616A6B";

@@ -31,5 +31,29 @@ docker compose up -d
 
 ## Developer Notes
 
+### Completion time (rough estimates)
+- MVP with Unit Tests: 2-3 Hours.
+- WebAPI: 30 minutes.
+- Client: 2-3 Hours
+- Docker: 1 Hours
+
+Additional time was spent on comments / polishing existing code as well as performing installation of dependencies.
+
+Software used:
+- Docker desktop
+- WebStorm
+- Rider
+- VS Code
+
+### Self inflicted Q&A:
+  - **Q: Why did you dockerise it?**
+    - A: Ease of testing and makes me less worried it'll spontaneously fall over when providing to Dubber.
+  - **Q: Why use Next.js**
+    - A: It's very batteries included, with minimal setup required to get a solid, stable frontend up and running.
+  - **Q: Why use DotNet?**
+    - A: It would likely have taken me a fraction of the time if I'd used Python, but it felt more appropriate to do it in the language most relevant to the applied role.
+  - **Q: Why did you include Numberwang?**
+    - A: It seemed like a good idea at the time.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

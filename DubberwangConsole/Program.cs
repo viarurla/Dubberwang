@@ -5,7 +5,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Pastel;
 
-
+// Dependency injection could be considered overkill here
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices((_, services) =>
     {
@@ -23,7 +23,7 @@ DubberLottery(host.Services);
 
 await host.RunAsync();
 
-
+// Static method to handle Lottery logic looping
 static void DubberLottery(IServiceProvider services)
 {
     Console.WriteLine("Welcome to Dubberwang!");
@@ -39,9 +39,11 @@ static void DubberLottery(IServiceProvider services)
     }
 }
 
+// Static method to handle execution of new Lottery results
 static void ExecuteNewLottery(ILotteryGenerator generator)
 {
     List<ILotteryBall> lotteryBalls = generator.GetNewLotteryBalls(6);
+    // Sadly the console does not support Hex colors by default, so we are using an external library here
     string result = String.Join(", ", lotteryBalls.Select(x => x.Value.ToString().Pastel(x.HexColor)));
     Console.WriteLine(result);
 }

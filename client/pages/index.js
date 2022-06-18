@@ -11,8 +11,11 @@ import {
 } from "@chakra-ui/react";
 import LotteryBallDock from "../components/LotteryBallDock";
 
+// Fetcher allows for convenient access to APIs with minimal boilerplate.
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
+// Represents the HomePage
+// Currently contains the presentational logic for the Lottery System
 const Home = () => {
 
     // Using HTTP would not be my choice in production.
@@ -22,14 +25,17 @@ const Home = () => {
     // Function to determine if the current number array is numberwang
     const isNumberWang = () => {
         let randNum = Math.round(Math.floor(Math.random() * 10));
-        // This is literally nonsense
+        // This is literally nonsense, don't think about it too much
         return randNum === 4;
     }
-
+    
+    // A quick and dirty way to update the current LotteryBalls
+    // I have not determined the better way, but I remain confident this is not it.
     const newNumbers = () => {
         return mutate('http://localhost:7040/api/Lottery')
     }
-
+    
+    // Neither of these present elegantly in this iteration, but are useful.
     if (error) return <div>Failed to load</div>
     if (!data) return <div>Loading...</div>
 

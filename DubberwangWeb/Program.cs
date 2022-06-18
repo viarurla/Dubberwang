@@ -34,7 +34,6 @@ app.UseCors();
 
 // For the sake of convenience this is disabled for MVP
 // app.UseHttpsRedirection();
-
 // app.UseAuthorization();
 
 app.MapControllers();

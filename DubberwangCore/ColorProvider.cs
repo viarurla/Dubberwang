@@ -2,8 +2,16 @@
 
 namespace DubberwangCore;
 
+/// <summary>
+/// Static class to handle color assignments.
+/// </summary>
 public static class ColorProvider
 {
+    /// <summary>
+    /// Using the supplied number, return the corresponding color.
+    /// </summary>
+    /// <param name="value"></param>
+    /// <returns></returns>
     public static string GetHexColorByNumber(uint value)
     {
         return value switch
