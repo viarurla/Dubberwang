@@ -1,5 +1,4 @@
-﻿using System.Net.Mail;
-using DubberwangInterfaces.Core;
+﻿using DubberwangInterfaces.Core;
 
 namespace DubberwangCore;
 

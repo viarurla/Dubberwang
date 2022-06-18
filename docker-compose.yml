@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  server:
+    build:
+      dockerfile: Server.DockerFile
+    ports:
+      - "7040:5000"
+  client:
+    build:
+      dockerfile: Client.DockerFile
+    ports:
+      - "3000:3000"

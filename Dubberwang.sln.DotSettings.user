@@ -1,8 +1,0 @@
-﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0e3b5201_002D6de1_002D496e_002D9296_002D67e6fcf1259c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ReturnExpectedHexColourBasedOnInputValue" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::00ADC5D1-C24B-4A0F-84D2-76911A8ABDCC::net6.0::DubberwangCoreTests.ColorProviderShould.ReturnExpectedHexColourBasedOnInputValue&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::00ADC5D1-C24B-4A0F-84D2-76911A8ABDCC::net6.0::DubberwangCoreTests.LotteryGeneratorShould.ProvideUniqueBallsWithMaxSize&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;xUnit::00ADC5D1-C24B-4A0F-84D2-76911A8ABDCC::net6.0::DubberwangCoreTests.LotteryGeneratorShould.ReturnBallsSortedNumerically&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
